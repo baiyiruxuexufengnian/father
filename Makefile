@@ -11,6 +11,9 @@ image:
 clean:
 	go clean && rm -f $(OUTPUT)
 
+push:
+	echo 'push image: $(PUBLISH_PATH)$(OUTPUT):${VERSION} to hub repository'
+
 version:
 	@echo ${VERSION}
 
