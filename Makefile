@@ -1,6 +1,6 @@
-VERSION=$(shell git describe --tags --always --dirty --dirty="-dev-test")
+VERSION=$(shell git describe --tags --always --dirty --dirty="-dev")
 
-PUBLISH_PATH=harbor.policy.
+PUBLISH_PATH=harbor.policy/test/
 OUTPUT=local-test
 
 all: version
